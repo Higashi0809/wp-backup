@@ -56,6 +56,17 @@
 <i class="fa fa-folder-open"></i>
 <?php the_category(','); ?>
     </span>
+
+    <span class="postcom">
+        <i class="fa fa-comment"></i>
+        <a href="<?php comments_link(); ?>">
+    <?php comments_number(
+    'コメント',
+    'コメント(1件)',
+    'コメント(%件)'
+    ); ?>
+    </a>
+    </span>
     </div>
     <?php the_content(); ?>
 
@@ -72,9 +83,13 @@
     '%title<i class="fa fa-chevron-circle-right"></i>'
     ); ?>
     </span>
-    <div>
+    </div>
+
 <?php endif; ?>
+
+<?php comments_template(); ?>
     </article>
+
 <?php endwhile; endif; ?>
 
 <?php if($wp_query->max_num_pages > 1): ?>
