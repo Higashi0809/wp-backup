@@ -22,7 +22,7 @@ body{
 
 /* 記事 */
 article {margin-bottom: 40px;
-overflow: hidden
+    overflow: hidden
 }
 
 article h1{
@@ -41,70 +41,101 @@ article h1 a {
 .postinfo {
     margin-top: 15px;
     font-size: 14px
-    }
-    .postinfo a {
-        color: #000000;
+}
+.postinfo a {
+    color: #000000;
     text-decoration: none
-    }
-    .postinfo .postcat {
-        margin-left: 20px
-    }
-    .postinfo .postcom {
-        margin-left: 20px
-    }
-    .postinfo i {
-        color: #888888
-    }
+}
+.postinfo .postcat {
+    margin-left: 20px
+}
+.postinfo .postcom {
+    margin-left: 20px
+}
+.postinfo i {
+    color: #888888
+}
 
-    /* 前後の記事へのリンク */
-    .pagenav a {
-        padding: 5px 10px;
-        border: solid 1px #cccccc;
-        border-radius: 10px;
-        color: #666666;
-        font-size: 12px;
-        text-decoration: none;
-    }
+/* 前後の記事へのリンク */
+.pagenav a {
+    padding: 5px 10px;
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    color: #666666;
+    font-size: 12px;
+    text-decoration: none;
+}
 
-    .pagenav .old a {float: left}
-    .pagenav .new a {float: right}
-    .pagenav {
-        overflow: hidden;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        clear: both
-    }
+.pagenav .old a {float: left}
+.pagenav .new a {float: right}
+.pagenav {
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    clear: both
+}
 
-    /* ヘッダー */
-    header {
-        margin-bottom: 40px;
-        background-color: #4a5f7e;
-        color: #ffffff
-    }
+/* ヘッダー */
+header {
+    margin-bottom: 40px;
+    background-color: #4a5f7e;
+    color: #ffffff
+}
 
-    header a {
-        color: #ffffff;
-        text-decoration: none
-    }
+header a {
+    color: #ffffff;
+    text-decoration: none
+}
 
-    .siteinfo {
-        overflow: hidden;
-        padding-top: 14px;
-        padding-bottom: 14px
-        }
+.siteinfo {
+    overflow: hidden;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #ffffff;
+    color: #4a5f7e
+}
+.siteinfo a {color: #4a5f7e}
 
-    .siteinfo h1 {
-        float: left;
+.siteinfo h1 {
+    float: left;
+    margin: 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px}
+
+    .siteinfo p {
+        float: right;
         margin: 0;
-        font-family: 'Acme', sans-serif;
-        font-size: 20px}
+        margin-top: 5px;
+        font-size: 12px
+    }
+    /* ナビゲーションメニュー */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        overflow: hidden
+    }
 
-        .siteinfo p {
-            float: right;
-            margin: 0;
-            margin-top: 5px;
-            font-size: 12px
-        }
+    nav li {
+        float: left;
+        margin-right: 15px
+    }
+
+    nav li a {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        border-bottom: solid 5px transparent
+    }
+
+nav li a:hover {
+    border-bottom-color: #00ccff
+}
+
+nav li.current-menu-item a {
+    border-bottom-color: #e6cc1c
+}
 
     /* フッター */
     footer {
@@ -191,21 +222,21 @@ article h1 a {
     }
     /* コメント投稿フォーム */
     #respond p {margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 12px}
-    
-    #respond label {font-size: 14px}
+        margin-bottom: 20px;
+        font-size: 12px}
 
-    #respond input, 
-    #respond textarea {
-        width: 100%;
-        padding: 5px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-        box-sizing: border-box
-            }
-            #respond input[type="submit"]
-            {width: 200px;
+        #respond label {font-size: 14px}
+
+        #respond input, 
+        #respond textarea {
+            width: 100%;
+            padding: 5px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        #respond input[type="submit"]
+        {width: 200px;
             padding: 10px;
             border: none;
             background-color: #e6cc1c;
@@ -232,8 +263,8 @@ article h1 a {
             
             #comments ul {
                 list-style: none;
-            margin: 0;
-            padding: 0
+                margin: 0;
+                padding: 0
             }
             #comments article {
                 border: dotted 1px #aaaaaa;
