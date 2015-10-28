@@ -2,6 +2,8 @@
 
     <div class="container">
 
+<div class="contents">
+
 <?php if(is_category() ): ?>
     <h1 class="archive-title">
         <i class="fa fa-folder-open"></i>
@@ -81,6 +83,8 @@
     </div>
 <?php endif; ?>
 
+    </div><!--contents-->
+    
 <div class="blogmenu">
     <ul>
 <?php dynamic_sidebar(); ?>
