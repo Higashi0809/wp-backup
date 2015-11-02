@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet"href="<?php echo get_stylesheet_uri(); ?>">
 
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></head>script>
+
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+<style>
+article img {width: 100%}
+    </style>
+    <![endif]-->
+    
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
